@@ -6,11 +6,14 @@ export PYTHONPATH="/usr/include/mgba:$PYTHONPATH"
 
 export PATH="$PATH:$HOME/.dotnet/tools"
 
+export BROWSER="/usr/bin/zen-browser"
+
 abbr --add cls clear
 abbr --add mkd mkdir
 abbr --add rmd rmdir
-abbr --add ll 'ls -l'
-abbr --add la 'ls -a'
+abbr --add ls 'eza --icons'
+abbr --add ll 'eza --icons -l'
+abbr --add la 'eza --icons -a -l'
 abbr --add reboot 'systemctl reboot'
 abbr --add shutdown 'systemctl poweroff'
 abbr --add poweroff 'systemctl poweroff'
@@ -20,14 +23,16 @@ abbr --add gita 'git add .'
 abbr --add gitc 'git commit -m'
 abbr --add zen zen-browser
 abbr --add zed zeditor
+abbr --add zed. zeditor .
 abbr --add touchpad 'hyprctl -r -- keyword device[syna32b3:01-06cb:ce7d-touchpad]:enabled'
 
+set fish_greeting ""
+fastfetch
 
-set fish_greeting "$(neofetch)"
 zoxide init fish --cmd cd | source
 
 set -x GOOGLE_CLOUD_PROJECT "gemini-cli-pipo"
-set -x EDITOR 'code'
+set -x EDITOR 'zeditor'
 
 function bind_bang
     switch (commandline -t)[-1]
@@ -53,6 +58,7 @@ function fish_user_key_bindings
     bind '$' bind_dollar
 end
 
+
 function webstorm
     nohup webstorm $argv >/dev/null 2>&1 &
 end
@@ -67,6 +73,9 @@ function pycharm
 end
 function datagrip
     nohup datagrip $argv >/dev/null 2>&1 &
+end
+function discord
+    nohup discord $argv >/dev/null 2>&1 &
 end
 
 # >>> conda initialize >>>
@@ -100,4 +109,11 @@ function spf
         source "$spf_last_dir"
         rm -f -- "$spf_last_dir" >> /dev/null
     end
+end
+
+function kubebld
+    # Set the minikube target-docker-env to your local docker-env
+    eval $(minikube -p minikube docker-env)
+    # Build and 'deploy' the container locally
+    mvn clean install -Dquarkus.container-image.build=true
 end
