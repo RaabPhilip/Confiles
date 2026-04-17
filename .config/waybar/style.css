@@ -1,6 +1,6 @@
 @import "/usr/lib/hyprwhspr/config/waybar/hyprwhspr-style.css";
 /* --primary: #0F1E25;
-    --backgrund: #C8E690; 
+    --backgrund: #C8E690;
 */
 
 * {
@@ -10,23 +10,24 @@
     font-weight: 500;
     font-size: 14px;
     padding: 0;
-	border-radius: 0;
+    border-radius: 0;
 }
 
 window#waybar {
-    border: 2px solid #0F1E25;
+    border: 1px solid #0f1e25;
     background: none;
+    margin: 5px;
 }
 
 tooltip {
-    background-color: #C8E690;
-    border: 1px solid #0F1E25;
+    background-color: #c8e690;
+    border: 1px solid #0f1e25;
     font-size: 2px;
 }
 
 tooltip label {
-	margin: 8px;
-    color: #0F1E25;
+    margin: 8px;
+    color: #0f1e25;
 }
 
 #clock,
@@ -44,7 +45,7 @@ tooltip label {
 #language {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
-	border-radius: 0;
+    border-radius: 0;
 }
 
 #workspaces {
@@ -61,32 +62,30 @@ tooltip label {
     min-width: 15px;
     box-shadow: inset 0 -3px transparent;
     padding: 0px 4px;
-    color: #0F1E25;
-    background-color: #C8E690;
-    border: 1px solid #0F1E25; 
+    color: #0f1e25;
+    background-color: #c8e690;
+    border: 1px solid #0f1e25;
     border-radius: 0;
     margin-right: 4px;
 }
 
 #workspaces button.active {
-    color: #C8E690;
-    background-color: #0F1E25;
+    color: #c8e690;
+    background-color: #0f1e25;
 }
 
 #workspaces button.urgent {
     background-color: #7a5a7a;
-	color: #C8E690;
-	border: 1px solid #7a5a7a;
+    color: #c8e690;
+    border: 1px solid #7a5a7a;
 }
 
 #clock {
-    background-color: #C8E690;
-    border: 1px solid #C8E690;
-    color: #0F1E25;
+    background-color: #c8e690;
+    border: 1px solid #c8e690;
+    color: #0f1e25;
     margin-left: 6px;
 }
-
-
 
 #cpu,
 #memory,
@@ -101,64 +100,63 @@ tooltip label {
 #custom-next,
 #custom-bluetooth,
 #language {
-    background-color: #C8E690;
-    border: 1px solid #0F1E25;
-    color: #0F1E25;
+    background-color: #c8e690;
+    border: 1px solid #0f1e25;
+    color: #0f1e25;
 }
 
 #network {
-	min-width: 100px;
+    min-width: 100px;
 }
 
 #cpu,
 #memory,
 #battery,
 #pulseaudio {
-	min-width: 40px;
+    min-width: 40px;
 }
 
 #cpu.critical,
 #memory.critical {
-    color: #FF7276;
-    border: 1px solid #FF7276;
+    color: #ff7276;
+    border: 1px solid #ff7276;
 }
 
 #battery.critical {
-    color: #CC0202;
-    border: 3px solid #CC0202;
+    color: #cc0202;
+    border: 3px solid #cc0202;
 }
-
 
 #battery.warning,
 #battery.urgent {
-    color: #FF7276;
-    border: 1px solid #FF7276;
+    color: #ff7276;
+    border: 1px solid #ff7276;
 }
 
 #custom-launcher {
-	font-size: 20px;
-	padding-left: 10px;
-	padding-right: 5px;
-	transition: none;
-	color: #0F1E25;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+    transition: none;
+    color: #0f1e25;
 }
 
 #custom-control {
-	padding-left: 5px;
-	padding-right: 5px;
-	transition: none;
-	color: #0F1E25;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: none;
+    color: #0f1e25;
 }
+#custom-hyprwhspr,
 #custom-bluetooth {
-	font-size: 18px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	color: #0F1E25;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #0f1e25;
 }
 
 #language {
-	min-width: 20px;
+    min-width: 20px;
 }
 
 /* #mpris {
@@ -176,4 +174,3 @@ tooltip label {
 #custom-next {
     border-left: none;
 } */
-

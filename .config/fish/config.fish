@@ -60,22 +60,22 @@ end
 
 
 function webstorm
-    nohup webstorm $argv >/dev/null 2>&1 &
+    nohup webstorm $argv >/dev/null 2>&1 & diswon
 end
 function idea
-    nohup idea $argv >/dev/null 2>&1 &
+    nohup idea $argv >/dev/null 2>&1 & disown
 end
 function rider
-    nohup rider $argv >/dev/null 2>&1 &
+    nohup rider $argv >/dev/null 2>&1 & disown
 end
 function pycharm
-    nohup pycharm $argv >/dev/null 2>&1 &
+    nohup pycharm $argv >/dev/null 2>&1 & disown
 end
 function datagrip
-    nohup datagrip $argv >/dev/null 2>&1 &
+    nohup datagrip $argv >/dev/null 2>&1 & disown
 end
 function discord
-    nohup discord $argv >/dev/null 2>&1 &
+    nohup discord $argv >/dev/null 2>&1 & disown
 end
 
 # >>> conda initialize >>>
