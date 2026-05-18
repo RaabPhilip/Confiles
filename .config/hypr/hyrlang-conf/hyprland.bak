@@ -18,8 +18,8 @@ monitor=$monitor2,2560x1440@100,1920x0,1
 monitor=$monitor3,2560x1440@100,4480x0,1
 
 
-# monitor=$beamer,preferred,auto,1,mirror, $monitor1
-# monitor=$beamer,preferred,auto,1
+monitor=$beamer,preferred,auto,1,mirror, $monitor1
+monitor=$beamer,preferred,auto,1
 
 
 
@@ -155,7 +155,6 @@ animations {
 
 # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
 dwindle {
-    pseudotile = true # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
     preserve_split = true # You probably want this
 }
 

@@ -25,6 +25,7 @@ abbr --add zen zen-browser
 abbr --add zed zeditor
 abbr --add zed. zeditor .
 abbr --add touchpad 'hyprctl -r -- keyword device[syna32b3:01-06cb:ce7d-touchpad]:enabled'
+abbr --add ff 'clear; fastfetch'
 
 set fish_greeting ""
 fastfetch
@@ -60,7 +61,7 @@ end
 
 
 function webstorm
-    nohup webstorm $argv >/dev/null 2>&1 & diswon
+    nohup webstorm $argv >/dev/null 2>&1 & disown
 end
 function idea
     nohup idea $argv >/dev/null 2>&1 & disown
@@ -116,4 +117,13 @@ function kubebld
     eval $(minikube -p minikube docker-env)
     # Build and 'deploy' the container locally
     mvn clean install -Dquarkus.container-image.build=true
+end
+
+function charging
+    switch $argv[1]
+        case "on"
+            adb shell dumpsys battery reset
+        case "off"
+            adb shell dumpsys battery unplug
+    end
 end

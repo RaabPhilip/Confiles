@@ -3,14 +3,13 @@ $mainMod = SUPER
 $terminal = alacritty
 $menu = walker
 
-bind = $mainMod SHIFT, Q, exec, $terminal
-bind = $mainMod, Q, workspace, 1
+bind = $mainMod, RETURN, exec, $terminal
 bind = $mainMod, C, killactive,
 bind = $mainMod, M, exit,
 bind = $mainMod, E, exec, ghostty -e spf
 bind = $mainMod SHIFT, E, exec, nemo
 bind = $mainMod SHIFT, V, togglefloating,
-bind = $mainMod, RETURN, exec, $menu
+bind = $mainMod, SPACE, exec, $menu
 bind = $mainMod, I, exec, zeditor ./Confiles/
 bind = $mainMod, P, pseudo, # dwindle
 # bind = $mainMod, J, togglesplit, # dwindle
@@ -39,11 +38,12 @@ bind=$mainMod CTRL,right,workspace,+1
 bind = $mainMod ALT, right, resizeactive, 10 0
 bind = $mainMod ALT, left, resizeactive, -10 0
 bind = $mainMod ALT, up, resizeactive, 0 -10
-bind = $mainMod ALT, down, resizeactive, 0 10s
+bind = $mainMod ALT, down, resizeactive, 0 10
 
 # Switch workspaces with mainMod + [0-9]
 # bind = $mainMod, 1, workspace, 1
 bind = $mainMod, S, workspace, name:music
+bind = $mainMod, O, workspace, name:notes
 
 bind = $mainMod, 1, workspace, 1
 bind = $mainMod, 2, workspace, 2

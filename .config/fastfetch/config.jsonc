@@ -3,9 +3,11 @@
   "logo": {
     "source": "endeavouros",
     "padding": {
+      "top": 1,
+      "left": 1,
       "right": 2,
     },
-    "height": 15,
+    "height": 16,
     // Re-coloring the ASCII art to a bright yellow-green
     "color": {
       "1": "#77b188",
