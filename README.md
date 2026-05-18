@@ -2,19 +2,22 @@
 
 ## Installation
 
+
+Download Stow:
+```bash
+sudo pacman -S stow
+```
+Create Directory:
+```bash
+mkdir Confiles
+cd Confiles
+```
 Clone the repository:
 ```bash
 git clone https://github.com/RaabPhilip/Confiles.git
 ```
-
-Set up Stow:
-```bash
-sudo pacman -S stow
-```
-
 Init Stow:
 ```bash
-cd Confiles
 stow -t ~ .
 ```
 
