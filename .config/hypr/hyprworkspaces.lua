@@ -15,20 +15,36 @@ hl.workspace_rule({
     monitor = monitor1,
     default = true,
     on_created_empty = "alacritty",
+    persistent = true,
 })
 
 hl.workspace_rule({
     workspace = "2",
     monitor = monitor2,
     default = true,
+    persistent = true,
 })
 
 hl.workspace_rule({
     workspace = "3",
     monitor = monitor3,
     default = true,
+    persistent = true,
     on_created_empty = "zen-browser",
 })
+
+hl.workspace_rule({
+    workspace = "4",
+    default = true,
+    persistent = true,
+})
+hl.workspace_rule({
+    workspace = "5",
+    default = true,
+    persistent = true,
+})
+
+
 
 -- workspace = 4,monitor:$beamer,default:true
 

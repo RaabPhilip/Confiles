@@ -1,8 +1,5 @@
--- Source: ~/.config/hypr/hyprkeybinds.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("hyprkeybinds")
--- Source: ~/.config/hypr/hyprworkspaces.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("hyprworkspaces")
--- Source: ~/.config/hypr/hyprrules.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("hyprrules")
 
 -- Variables
@@ -60,6 +57,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("mako")                                                    -- Notification daemon
     hl.exec_cmd("systemctl --user start hyprpolkitagent")                  -- PolicyKit agent
     hl.exec_cmd("waybar")                                                  -- Status bar
+    -- hl.exec_cmd("qs -c noctalia-shell")
     hl.exec_cmd("hyprpaper")                                               -- Wallpaper daemon
     hl.exec_cmd("clipse -listen")                                          -- Clipboard manager
     hl.exec_cmd("udiskie")                                                 -- Disk manager
@@ -262,7 +260,7 @@ hl.config({
         blur = {
             enabled = true,
             size = 3,
-            passes = 1,
+            passes = 2,
             vibrancy = 0.1696,
         },
     },
@@ -305,9 +303,15 @@ hl.config({
     --gestures {
     --    workspace_swipe = true
     --}
-    -- Example per-device config
-    -- See https://wiki.hyprland.org/Configuring/Keywords/#per-device-input-configs for more
-    -- hyprwhspr - Toggle mode (added by hyprwhspr setup)
-    -- Press once to start, press again to stop
-    -- This ensures that all apps launched within Hyprland see your local bin folder
+    --
+
+    hl.layer_rule({
+        name = "noctalia",
+        match = {
+            namespace = "noctalia-background-.*$",
+        },
+        ignore_alpha = 0.5,
+        blur = true,
+        blur_popups = true,
+    })
 })

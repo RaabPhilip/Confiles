@@ -2,6 +2,12 @@ local mainMod = "SUPER"
 
 local terminal = "alacritty"
 local menu = "walker"
+local ipc = "qs -c noctalia-shell ipc call"
+
+-- -- Core binds
+-- hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
+-- hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"))
+-- hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. " settings toggle"))
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
@@ -42,7 +48,7 @@ hl.bind(mainMod .. " + CTRL + right", hl.dsp.focus({ workspace = "+1" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- bind = $mainMod, 1, workspace, 1
-hl.bind(mainMod .. " + S", hl.dsp.focus({ workspace = "name:music" }))
+hl.bind(mainMod .. " + ALT + M", hl.dsp.focus({ workspace = "name:music" }))
 hl.bind(mainMod .. " + O", hl.dsp.focus({ workspace = "name:notes" }))
 
 hl.bind(mainMod .. " + 1", hl.dsp.focus({ workspace = 1 }))
@@ -116,7 +122,3 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("alacritty --class clipse -e clipse")
 -- Colour Picker
 hl.bind(mainMod .. " + SHIFT + I", hl.dsp.exec_cmd("hyprpicker -a -f hex"))
 hl.bind(mainMod .. " + ALT + I", hl.dsp.exec_cmd("hyprpicker -a -f rgb"))
-
--- touchpad
-hl.bind(mainMod .. " + SHIFT + T",
-    hl.dsp.exec_cmd("hyprctl -r -- keyword device[syna32b3:01-06cb:ce7d-touchpad]:enabled toggle"))
