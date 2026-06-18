@@ -2,12 +2,12 @@ local mainMod = "SUPER"
 
 local terminal = "alacritty"
 local menu = "walker"
-local ipc = "qs -c noctalia-shell ipc call"
+local ipc = "noctalia msg"
 
--- -- Core binds
--- hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " launcher toggle"))
--- hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " controlCenter toggle"))
--- hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. " settings toggle"))
+-- Core binds
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center"))
+hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. "panel-toggle settings"))
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
@@ -15,20 +15,21 @@ hl.bind(mainMod .. " + M", hl.dsp.exit())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("ghostty -e spf"))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("nemo"))
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
+-- hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("zeditor ./Confiles/"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 -- bind = $mainMod, J, togglesplit, # dwindle
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
-hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+
+-- hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+-- hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
+-- hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+-- hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
 
 -- Move window in workspace
 hl.bind(mainMod .. " + SHIFT + left", hl.dsp.window.move({ direction = "l" }))
@@ -39,12 +40,6 @@ hl.bind(mainMod .. " + SHIFT + down", hl.dsp.window.move({ direction = "d" }))
 -- move workspace left and rigth
 hl.bind(mainMod .. " + CTRL + left", hl.dsp.focus({ workspace = -1 }))
 hl.bind(mainMod .. " + CTRL + right", hl.dsp.focus({ workspace = "+1" }))
-
--- Rezise window in workspace
--- hl.bind(mainMod .. " + ALT + right", hl.dsp.window.resize("{10, 0}"))
--- hl.bind(mainMod .. " + ALT + left", hl.dsp.window.resize("{10, 0}"))
--- hl.bind(mainMod .. " + ALT + up", hl.dsp.window.resize("{0, 10}"))
--- hl.bind(mainMod .. " + ALT + down", hl.dsp.window.resize("{0, 10}"))
 
 -- Switch workspaces with mainMod + [0-9]
 -- bind = $mainMod, 1, workspace, 1
@@ -76,20 +71,11 @@ hl.bind(mainMod .. " + SHIFT + 8", hl.dsp.window.move({ workspace = 8 }))
 hl.bind(mainMod .. " + SHIFT + 9", hl.dsp.window.move({ workspace = 9 }))
 hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 
--- Example special workspace (scratchpad)
--- bind = $mainMod, S, togglespecialworkspace, magic
--- bind = $mainMod, S, movetoworkspace, +0
--- bind = $mainMod, S, togglespecialworkspace, magic
--- bind = $mainMod, S, movetoworkspace, special:magic
--- bind = $mainMod, S, togglespecialworkspace, magic
-
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen())
-
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot-gui"))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag())
@@ -113,12 +99,22 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
+-- Screenshot
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot-gui"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd(ipc .. " screenshot-region"))
+
 -- Screenlocking
-hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(ipc .. " session lock"))
 
 -- Clipboard Manager
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("alacritty --class clipse -e clipse"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " panel-toggle clipboard"))
 
 -- Colour Picker
 hl.bind(mainMod .. " + SHIFT + I", hl.dsp.exec_cmd("hyprpicker -a -f hex"))
 hl.bind(mainMod .. " + ALT + I", hl.dsp.exec_cmd("hyprpicker -a -f rgb"))
+
+-- Wallpaper
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(ipc .. " panel-toggle wallpaper"))
+
+-- Power Menu
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " panel-toggle session"))

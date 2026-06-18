@@ -8,21 +8,9 @@
       "right": 2,
     },
     "height": 16,
-    // Re-coloring the ASCII art to a bright yellow-green
-    "color": {
-      "1": "#77b188",
-      "2": "#50936a",
-      "3": "#2d6349",
-    },
   },
   "display": {
     "separator": " -> ",
-    "color": {
-      // Using a darker green for the 'Hardware Information' titles
-      "keys": "green",
-      // Using the lighter background text color for values
-      "output": "white",
-    },
   },
   "modules": [
     "break",
@@ -33,32 +21,26 @@
     {
       "type": "custom",
       "format": "Hardware Information",
-      "outputColor": "#417755",
     },
     {
       "type": "host",
       "key": "󰌢",
-      "keyColor": "#78b188",
     },
     {
       "type": "cpu",
       "key": "",
-      "keyColor": "#78b188",
     },
     {
       "type": "gpu",
       "key": "󰢮",
-      "keyColor": "#78b188",
     },
     {
       "type": "memory",
       "key": "󰘚",
-      "keyColor": "#78b188",
     },
     {
       "type": "display",
       "key": "󰍹",
-      "keyColor": "#78b188",
     },
     {
       "type": "custom",
@@ -67,29 +49,24 @@
     {
       "type": "custom",
       "format": "Software Information",
-      "outputColor": "#417755",
     },
     {
       "type": "os",
       "key": "",
-      "keyColor": "#78b188",
     },
     {
       "type": "kernel",
       "key": "",
-      "keyColor": "#78b188",
     },
     {
       "type": "terminal",
       "key": "",
-      "keyColor": "#78b188",
     },
     {
       "type": "custom",
       "format": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
     },
     {
-      // Custom line for the "muted" Pac-Man and ghosts
       "type": "custom",
       "format": "\u001b[38;5;253m󰮯  \u001b[38;5;167m󰊠  \u001b[38;5;143m󰊠  \u001b[38;5;216m󰊠  \u001b[38;5;110m󰊠  \u001b[38;5;139m󰊠  \u001b[38;5;109m󰊠  \u001b[38;5;248m󰊠",
     },

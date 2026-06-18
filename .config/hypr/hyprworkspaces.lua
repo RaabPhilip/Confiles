@@ -44,10 +44,6 @@ hl.workspace_rule({
     persistent = true,
 })
 
-
-
--- workspace = 4,monitor:$beamer,default:true
-
 hl.workspace_rule({
     workspace = "name:music",
     on_created_empty = "spotify",

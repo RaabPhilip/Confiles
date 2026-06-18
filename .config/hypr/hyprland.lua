@@ -38,36 +38,29 @@ hl.monitor({
     output = beamer,
     mode = "preferred",
     position = "auto",
-    scale = "1",
-    mirror = "$monitor1",
+    scale = 1,
+    mirror = monitor1,
 })
-
--- hl.monitor({
---     output = beamer,
---     mode = "preferred",
---     position = "auto",
---     scale = "1",
--- })
 
 --################
 --## AUTOSTART ###
 --################
 
 hl.on("hyprland.start", function()
-    hl.exec_cmd("mako")                                                    -- Notification daemon
-    hl.exec_cmd("systemctl --user start hyprpolkitagent")                  -- PolicyKit agent
-    hl.exec_cmd("waybar")                                                  -- Status bar
-    -- hl.exec_cmd("qs -c noctalia-shell")
-    hl.exec_cmd("hyprpaper")                                               -- Wallpaper daemon
-    hl.exec_cmd("clipse -listen")                                          -- Clipboard manager
-    hl.exec_cmd("udiskie")                                                 -- Disk manager
-    hl.exec_cmd("nm-applet &")                                             -- Network manager
-    hl.exec_cmd("hypridle")                                                -- Idle manager
-    hl.exec_cmd("hyprpm reload -n")                                        -- Plugin manager
-    hl.exec_cmd("alacritty --class daily -e ~/.local/bin/daily-update.sh") -- Terminal emulator
-    hl.exec_cmd("synology-drive")                                          -- Synology Drive
-    hl.exec_cmd("systemctl --user start elephant.service")                 -- Elephant => is
-    hl.exec_cmd("walker --gapplication-service")                           -- Walker
+    -- hl.exec_cmd("mako")                                                    -- Notification daemon
+    -- hl.exec_cmd("systemctl --user start hyprpolkitagent")                  -- PolicyKit agent
+    -- hl.exec_cmd("waybar")                                                  -- Status bar
+    hl.exec_cmd("noctalia")
+    -- hl.exec_cmd("hyprpaper")                                               -- Wallpaper daemon
+    -- hl.exec_cmd("clipse -listen")                                          -- Clipboard manager
+    hl.exec_cmd("udiskie") -- Disk manager
+    -- hl.exec_cmd("nm-applet &")                                             -- Network manager
+    -- hl.exec_cmd("hypridle")                                                -- Idle manager
+    -- hl.exec_cmd("hyprpm reload n")                                         -- Plugin manager
+    -- hl.exec_cmd("alacritty --class daily -e ~/.local/bin/daily-update.sh") -- Terminal emulator
+    hl.exec_cmd("synology-drive") -- Synology Drive
+    -- hl.exec_cmd("systemctl --user start elephant.service")                 -- Elephant => is
+    -- hl.exec_cmd("walker --gapplication-service")                           -- Walker
 end)
 
 --############################
@@ -223,10 +216,8 @@ hl.device({
     enabled = true,
 })
 
--- TODO: manual review on line 215 — no mapping for dispatcher "Speech-to-text"
--- hl.bind("SUPER + ALT + D", hl.dsp.Speech_to_text("exec", "/usr/lib/hyprwhspr/config/hyprland/hyprwhspr-tray.sh record"), { drag = true })
 hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
--- hl.env("PATH", "$HOME/.local/bin:$PATH")
+
 hl.config({
     general = {
         gaps_in = 5,
@@ -315,3 +306,6 @@ hl.config({
         blur_popups = true,
     })
 })
+
+-- For Noctalia Color templates
+require("noctalia")
