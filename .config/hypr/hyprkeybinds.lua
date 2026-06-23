@@ -7,7 +7,8 @@ local ipc = "noctalia msg"
 -- Core binds
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center"))
-hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. "panel-toggle settings"))
+hl.bind(mainMod .. " + comma", hl.dsp.exec_cmd(ipc .. " settings-toggle"))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd(ipc .. " panel-toggle screen-recorder"))
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())

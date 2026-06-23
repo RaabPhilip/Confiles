@@ -78,6 +78,9 @@ end
 function discord
     nohup discord $argv >/dev/null 2>&1 & disown
 end
+function studio
+    nohup studio $argv >/dev/null 2>&1 & disown
+end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
