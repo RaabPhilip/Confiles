@@ -1,5 +1,5 @@
 #
-# ~/.bashrc
+# ~/.bshrc
 #
 
 # If not running interactively, don't do anything
@@ -13,7 +13,7 @@ alias cls=clear
 alias mkd=mkdir
 alias rmd=rmdir
 alias ll='ls -l'
-alias la='ls -a' 
+alias la='ls -a'
 alias arduino=arduino-cli
 
 alias fach="cd ~/Documents/school/\b"
