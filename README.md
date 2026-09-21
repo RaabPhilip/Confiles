@@ -13,6 +13,10 @@ Clone the repository:
 ```bash
 git clone https://github.com/RaabPhilip/Confiles.git
 ```
+Change Directory:
+```bash
+cd Confiles
+```
 Init Stow:
 ```bash
 stow -t ~ .
