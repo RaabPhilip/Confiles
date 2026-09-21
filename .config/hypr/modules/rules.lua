@@ -123,6 +123,7 @@ hl.workspace_rule({
     default = true,
     persistent = true,
 })
+
 hl.workspace_rule({
     workspace = "5",
     default = true,

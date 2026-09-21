@@ -7,3 +7,8 @@ shell = '/bin/fish'
 
 [font]
 normal = { family = "JetbrainsMono Nerd Font", style = "Regular" }
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"

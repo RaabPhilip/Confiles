@@ -34,6 +34,8 @@ zoxide init fish --cmd cd | source
 
 set -x GOOGLE_CLOUD_PROJECT "gemini-cli-pipo"
 set -x EDITOR 'zeditor'
+set -x VISUAL 'zeditor'
+set -x TERMINAL 'alacritty'
 
 function bind_bang
     switch (commandline -t)[-1]

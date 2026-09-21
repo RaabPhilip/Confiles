@@ -8,7 +8,7 @@ local env = require("modules.variables")
 hl.monitor({
     output = env.outputs.laptop,
     mode = "1920x1080@60",
-    position = "0x400",
+    position = "0x800",
     scale = "1",
 })
 

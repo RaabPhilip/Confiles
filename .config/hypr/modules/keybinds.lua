@@ -34,7 +34,6 @@ end
 
 hl.bind(env.mainMod .. " + Tab", hl.dsp.focus({ workspace = "prev" }))
 
-hl.bind(env.mainMod .. " + Tab", hl.dsp.focus({ workspace = "prev" }))
 -- move workspace left and rigth
 hl.bind(env.mainMod .. " + CTRL + left", hl.dsp.focus({ workspace = -1 }))
 hl.bind(env.mainMod .. " + CTRL + right", hl.dsp.focus({ workspace = "+1" }))
@@ -86,13 +85,11 @@ hl.bind(env.mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(env.apps.ipc .. " panel-t
 hl.bind(env.mainMod .. " + P", hl.dsp.exec_cmd(env.apps.ipc .. " panel-toggle session"))
 
 -- Scrolling Layout
-hl.bind(env.mainMod .. " + ALT + p", hl.dsp.layout("promote"))
-hl.bind(env.mainMod .. " + ALT + o", hl.dsp.layout("consume"))
+-- hl.bind(env.mainMod .. " + SHIFT + up", hl.dsp.layout("promote"))
 
-hl.bind(env.mainMod .. " + CTRL + h", hl.dsp.layout("colresize -conf"))
 hl.bind(env.mainMod .. " + ALT + f", hl.dsp.layout("fit_into_view"))
-hl.bind(env.mainMod .. " + ALT + i", hl.dsp.layout("inhibit_scroll"))
-hl.bind(env.mainMod .. " + ALT + x", hl.dsp.layout("consume_or_expel next"))
+hl.bind(env.mainMod .. " + SHIFT + down", hl.dsp.layout("consume_or_expel next"))
+hl.bind(env.mainMod .. " + SHIFT + up", hl.dsp.layout("consume_or_expel prev"))
 
 local function layout_bind(bind_table)
     return function()
@@ -112,8 +109,8 @@ local function layout_bind(bind_table)
 end
 
 -- Move window in workspace
-hl.bind(env.mainMod .. " + SHIFT + up", hl.dsp.window.move({ direction = "u" }))
-hl.bind(env.mainMod .. " + SHIFT + down", hl.dsp.window.move({ direction = "d" }))
+-- hl.bind(env.mainMod .. " + SHIFT + up", hl.dsp.window.move({ direction = "u" }))
+-- hl.bind(env.mainMod .. " + SHIFT + down", hl.dsp.window.move({ direction = "d" }))
 
 hl.bind(env.mainMod .. " + SHIFT + left", layout_bind({
     scrolling = hl.dsp.layout("swapcol r"), -- Scrolling: swap column with left one
