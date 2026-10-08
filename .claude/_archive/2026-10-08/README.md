@@ -15,6 +15,7 @@ Nothing here is loaded by Claude Code. To restore, move the item back to its ori
 | plans/*.md | ~/.claude/plans/ |
 | gemini/dot-gemini/ | ~/.gemini (not in git: holds OAuth credentials) |
 | plugin-cache/ | ~/.claude/plugins/cache/… (not in git: re-downloadable) |
+| CLAUDE.md | ~/Confiles/.claude/CLAUDE.md (pre-interview version, replaced by the 15-rule file) |
 | config/ | snapshots of settings.json, installed_plugins.json, known_marketplaces.json, CAL .claude/settings.json, MCP servers |
 
 ## Plugins removed (fish)

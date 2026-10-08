@@ -1,6 +1,6 @@
 # Map
 
-Shared preferences: ~/.claude/CLAUDE.md. Read it first. This file only points.
+Shared preferences: ~/.claude/CLAUDE.md. Read it first. This file only points. (≤20 lines; add a rule only after the same correction twice.)
 
 ## Request → where to go
 | Request                                  | Go to                                              |
