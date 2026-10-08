@@ -25,6 +25,13 @@ Shared preferences: ~/.claude/CLAUDE.md. Read it first. This file only points.
 | AvaloniaDemo (Pose)  | ~/Github/Pose/AvaloniaDemo             | default — write code directly, not homework |
 | my-homelab           | ~/Github/my-homelab                    | homelab                   |
 
+## Templates (repeat jobs: read the template before doing the job)
+- Project status / "what's next": ~/Confiles/.claude/templates/project-status.md
+- Linux/Arch error or broken thing on archibald: ~/Confiles/.claude/templates/linux-troubleshoot.md
+- New project / `/init` / .NET scaffold: ~/Confiles/.claude/templates/project-kickoff.md
+- "commit it" / "update CLAUDE.md": ~/Confiles/.claude/templates/session-wrap-up.md
+- How-to note into the Obsidian vault: ~/Documents/Synology/obsidian/.claude/templates/how-to-note.md
+
 ## Other places
 - Memory: ~/.claude/projects/<path-with-dashes>/memory/ (managed by Claude Code)
 - Skills: ~/.claude/skills → ~/Confiles/.claude/skills. Keep flat. synced/ is Anthropic's, don't edit
