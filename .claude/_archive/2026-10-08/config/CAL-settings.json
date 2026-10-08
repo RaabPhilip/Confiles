@@ -1,0 +1,7 @@
+{
+  "enabledPlugins": {
+    "dotnet-blazor@dotnet-agent-skills": true,
+    "dotnet-data@dotnet-agent-skills": true,
+    "csharp-lsp@claude-plugins-official": true
+  }
+}

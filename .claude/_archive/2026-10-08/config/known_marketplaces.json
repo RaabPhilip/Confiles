@@ -1,0 +1,42 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "/home/pipo/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-10-07T21:08:11.824Z"
+  },
+  "obsidian-skills": {
+    "source": {
+      "source": "github",
+      "repo": "kepano/obsidian-skills"
+    },
+    "installLocation": "/home/pipo/.claude/plugins/marketplaces/obsidian-skills",
+    "lastUpdated": "2026-09-18T10:23:05.117Z"
+  },
+  "dotnet-agent-skills": {
+    "source": {
+      "source": "github",
+      "repo": "dotnet/skills"
+    },
+    "installLocation": "/home/pipo/.claude/plugins/marketplaces/dotnet-agent-skills",
+    "lastUpdated": "2026-09-21T13:55:58.951Z"
+  },
+  "i-have-adhd": {
+    "source": {
+      "source": "github",
+      "repo": "ayghri/i-have-adhd"
+    },
+    "installLocation": "/home/pipo/.claude/plugins/marketplaces/i-have-adhd",
+    "lastUpdated": "2026-09-28T06:48:50.596Z"
+  },
+  "impeccable": {
+    "source": {
+      "source": "github",
+      "repo": "pbakaus/impeccable"
+    },
+    "installLocation": "/home/pipo/.claude/plugins/marketplaces/impeccable",
+    "lastUpdated": "2026-09-28T06:52:57.043Z"
+  }
+}

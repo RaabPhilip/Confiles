@@ -1,0 +1,1 @@
+- [Project mode: homelab](project-mode-homelab.md) — my-homelab repo always uses homelab mode

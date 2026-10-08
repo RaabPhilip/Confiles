@@ -1,0 +1,91 @@
+{
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "model": "opus",
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "impeccable@impeccable": true,
+    "cc-plugin-you-should-know@builtin": true
+  },
+  "extraKnownMarketplaces": {
+    "obsidian-skills": {
+      "source": {
+        "source": "github",
+        "repo": "kepano/obsidian-skills"
+      }
+    },
+    "dotnet-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "dotnet/skills"
+      }
+    },
+    "i-have-adhd": {
+      "source": {
+        "source": "github",
+        "repo": "ayghri/i-have-adhd"
+      }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
+    }
+  },
+  "feedbackDrafts": "quiet",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "xhigh"
+    },
+    "claude-sonnet-5": {
+      "effortLevel": "high"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "medium"
+    }
+  },
+  "voice": {
+    "enabled": false,
+    "mode": "hold"
+  },
+  "timeFormat": "24-hour",
+  "theme": "dark",
+  "editorMode": "normal",
+  "preferredNotifChannel": "auto",
+  "inputNeededNotifEnabled": false,
+  "autoMode": {
+    "environment": [
+      "### Org-wide",
+      "**Organization**: None configured",
+      "**Cloud provider(s)**: None configured",
+      "**Repository visibility**: Not queryable here (no remotes on this repo); assume private for any repo used",
+      "**Internal sharing / snippet hosting**: None configured — treat public paste/gist services as outside the trust boundary",
+      "**Secrets management**: None configured",
+      "**Default / protected branches**: Not queryable here (no remotes configured on this repo)",
+      "**CI/CD deploy targets**: None configured",
+      "**Network posture**: None configured",
+      "**Host containment**: None configured — assume Claude Code runs on an ordinary developer machine or CI runner with open internet",
+      "**Source control**: The trusted repo and its remote(s) only (no additional orgs configured) — no remotes are currently configured on this repo",
+      "**Trusted internal domains**: None configured",
+      "**Trusted cloud buckets**: None configured",
+      "**Key internal services**: None configured",
+      "**Internal package registry**: None configured",
+      "**Sensitive data locations & audiences**: any file or store holding personal data, confidential business data, credentials, regulated data, or similarly sensitive material; preserve exact handles when known and share only with audiences cleared at the [named+specifics] bar; note ~/.cache/cloud-code/intellij/credentials.json, ~/.claude/.credentials.json, ~/.microsoft/usersecrets/7545e033-22fc-4434-81b6-e5a698ba4281/secrets.json, and Github/CloudBoy/.env are locations holding likely credential material found on this machine",
+      "**Data retention / declassification**: None configured",
+      "**Sensitive remote targets**: any namespace, host, or container whose name carries `prod` or `production` as a whole word or name segment",
+      "**Protected deployment namespaces / environments**: None configured — fall back to the Sensitive remote targets heuristic",
+      "**Protected IaC scopes**: IAM, RBAC, networking, quota, and node-pool resources; anything whose name or tag carries `prod` or `production` as a whole word or name segment",
+      "### User-specific",
+      "**Primary use of Claude Code**: personal/hobby use — default quick-task assistance, homework help, and homelab (self-hosting/networking) projects, per ~/.claude/CLAUDE.md",
+      "**Trusted repo**: The repo at /home/pipo has no tracked files and no remotes configured — no trusted repo established yet",
+      "**Org-specific CLIs**: None configured",
+      "routine under RaabPhilip/ prefix: git and gh operations against github.com/RaabPhilip/* repos (my-homelab, wallpapers, Confiles) are personal repos owned by the same account, but were not corroborated by this-project usage and are not adopted as trusted scope"
+    ]
+  },
+  "voiceEnabled": false
+}

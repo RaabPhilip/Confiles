@@ -1,0 +1,1 @@
+- [Project mode](project_mode.md) — AvaloniaDemo is homework-coding (course tutorial), not a real project

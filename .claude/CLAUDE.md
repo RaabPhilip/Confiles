@@ -4,6 +4,8 @@
 - Always follow the `i-have-adhd` skill unless I say "normal mode".
 - **Verbosity:** balanced — brief explanation alongside the result, not just the raw result and not a full essay.
 - **Git:** always ask before pushing to a remote, even if a previous push was approved. Never amend or rewrite existing commits — always create new commits instead.
+- **Scope:** stick to what's asked. Mention a missing test, stale doc, or refactor at the end as a suggestion — don't do it unless asked.
+- **Routing:** to find which skill, project, or folder fits a request, open `~/Confiles/.claude/MAP.md`.
 
 ## Environment
 - OS: Arch Linux, Hyprland (Lua config).

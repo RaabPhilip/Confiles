@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "plugins": {
+    "obsidian@obsidian-skills": [
+      {
+        "scope": "local",
+        "projectPath": "/home/pipo/Documents/Synology/obsidian",
+        "installPath": "/home/pipo/.claude/plugins/cache/obsidian-skills/obsidian/1.0.1",
+        "version": "1.0.1",
+        "installedAt": "2026-09-18T10:23:23.301Z",
+        "lastUpdated": "2026-09-18T10:23:23.301Z",
+        "gitCommitSha": "3ccff5338ea700537839b21900aa5358a0402c98"
+      }
+    ],
+    "dotnet-blazor@dotnet-agent-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/home/pipo/Documents/Synology/school/26-27/CAL_SmartCalibrationProvider",
+        "installPath": "/home/pipo/.claude/plugins/cache/dotnet-agent-skills/dotnet-blazor/0.1.1",
+        "version": "0.1.1",
+        "installedAt": "2026-09-21T13:55:43.489Z",
+        "lastUpdated": "2026-09-21T13:55:43.489Z",
+        "gitCommitSha": "8bbfe7a4d1c5c0cd42cd04e38031779c75f2dda3"
+      }
+    ],
+    "dotnet-data@dotnet-agent-skills": [
+      {
+        "scope": "project",
+        "projectPath": "/home/pipo/Documents/Synology/school/26-27/CAL_SmartCalibrationProvider",
+        "installPath": "/home/pipo/.claude/plugins/cache/dotnet-agent-skills/dotnet-data/0.1.5",
+        "version": "0.1.5",
+        "installedAt": "2026-09-21T13:56:01.325Z",
+        "lastUpdated": "2026-09-21T13:56:01.325Z",
+        "gitCommitSha": "8bbfe7a4d1c5c0cd42cd04e38031779c75f2dda3"
+      }
+    ],
+    "csharp-lsp@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/pipo/Documents/Synology/school/26-27/CAL_SmartCalibrationProvider",
+        "installPath": "/home/pipo/.claude/plugins/cache/claude-plugins-official/csharp-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-09-21T13:56:10.281Z",
+        "lastUpdated": "2026-09-21T13:56:10.281Z"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/pipo/.claude/plugins/cache/claude-plugins-official/frontend-design/c447c3207a42",
+        "version": "c447c3207a42",
+        "installedAt": "2026-09-21T18:28:38.110Z",
+        "lastUpdated": "2026-09-21T18:28:38.110Z"
+      }
+    ],
+    "superpowers@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/pipo/.claude/plugins/cache/claude-plugins-official/superpowers/6.3.0",
+        "version": "6.3.0",
+        "installedAt": "2026-09-28T06:48:09.006Z",
+        "lastUpdated": "2026-09-28T06:48:09.006Z",
+        "gitCommitSha": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797"
+      }
+    ],
+    "skill-creator@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/pipo/.claude/plugins/cache/claude-plugins-official/skill-creator/c447c3207a42",
+        "version": "c447c3207a42",
+        "installedAt": "2026-09-28T06:48:09.158Z",
+        "lastUpdated": "2026-09-28T06:48:09.158Z"
+      }
+    ],
+    "claude-md-management@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/pipo/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-09-28T06:48:09.289Z",
+        "lastUpdated": "2026-09-28T06:48:09.289Z"
+      }
+    ],
+    "impeccable@impeccable": [
+      {
+        "scope": "user",
+        "installPath": "/home/pipo/.claude/plugins/cache/impeccable/impeccable/4.4.0",
+        "version": "4.4.0",
+        "installedAt": "2026-09-28T07:06:39.275Z",
+        "lastUpdated": "2026-09-28T07:06:39.275Z",
+        "gitCommitSha": "9d715cc4f5564a990ca8345abfdd5df6dc9b41c8"
+      }
+    ]
+  }
+}

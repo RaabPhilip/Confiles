@@ -1,0 +1,4 @@
+skills/synced/
+# holds Gemini OAuth credentials
+_archive/*/gemini/
+_archive/*/plugin-cache/
