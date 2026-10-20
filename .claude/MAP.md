@@ -30,6 +30,7 @@ Shared preferences: ~/.claude/CLAUDE.md. Read it first. This file only points. (
 - Linux/Arch error or broken thing on archibald: ~/Confiles/.claude/templates/linux-troubleshoot.md
 - New project / `/init` / .NET scaffold: ~/Confiles/.claude/templates/project-kickoff.md
 - "commit it" / "update CLAUDE.md": ~/Confiles/.claude/templates/session-wrap-up.md
+- "work on issue #N" / plan → subagent → review → PR: ~/Confiles/.claude/templates/issue-workflow.md
 - How-to note into the Obsidian vault: ~/Documents/Synology/obsidian/.claude/templates/how-to-note.md
 
 ## Other places
