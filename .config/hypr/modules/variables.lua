@@ -3,7 +3,7 @@ local env = {
         laptop = "eDP-1",
         middle = "desc:Microstep MSI MP273Q E2 PB6H454A00496",
         second = "desc:Microstep MSI MP273Q E2 PB6H454A00249",
-        hdmi = "DP-4"
+        hdmi = ">>>"
     },
     apps = {
         terminal = "alacritty",

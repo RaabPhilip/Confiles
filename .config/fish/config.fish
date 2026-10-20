@@ -26,6 +26,7 @@ abbr --add zed zeditor
 abbr --add zed. zeditor .
 abbr --add touchpad 'hyprctl -r -- keyword device[syna32b3:01-06cb:ce7d-touchpad]:enabled'
 abbr --add ff 'clear; fastfetch'
+abbr --add mkenv 'python -m venv .venv'
 
 set fish_greeting ""
 fastfetch
@@ -33,7 +34,8 @@ fastfetch
 zoxide init fish --cmd cd | source
 
 set -x GOOGLE_CLOUD_PROJECT "gemini-cli-pipo"
-set -x EDITOR 'zeditor'
+set -x EDITOR "zeditor"
+set -x SUDO_EDITOR "micro"
 set -x VISUAL 'zeditor'
 set -x TERMINAL 'alacritty'
 

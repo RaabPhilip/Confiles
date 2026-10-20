@@ -44,6 +44,12 @@ hl.layer_rule({
 --------------------------------
 ---- APPLICATION WORKSPACE ASSIGNMENTS ----
 --------------------------------
+hl.window_rule({
+    match = {
+        class = "(Alacritty)",
+    },
+    workspace = "1",
+})
 
 hl.window_rule({
     match = {
@@ -61,7 +67,7 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "(obsidian)",
+        class = "(md.obsidian.Obsidian)",
     },
     workspace = 2,
 })
@@ -75,9 +81,16 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "(spotify)",
+        class = "(discord)",
     },
-    workspace = "name:music",
+    workspace = "3",
+})
+
+hl.window_rule({
+    match = {
+        class = "(whatsdesk)",
+    },
+    workspace = "3",
 })
 
 -- Video Player
@@ -98,8 +111,8 @@ hl.workspace_rule({
     workspace = "1",
     monitor = env.outputs.laptop,
     default = true,
-    on_created_empty = "alacritty",
     persistent = true,
+    on_created_empty = "alacritty",
 })
 
 hl.workspace_rule({
@@ -128,9 +141,4 @@ hl.workspace_rule({
     workspace = "5",
     default = true,
     persistent = true,
-})
-
-hl.workspace_rule({
-    workspace = "name:music",
-    on_created_empty = "spotify",
 })
