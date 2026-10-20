@@ -1,0 +1,355 @@
+[bar.default]
+center = [ "workspaces" ]
+end = [ "media", "tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery" ]
+margin_edge = 5
+margin_ends = 5
+margin_opposite_edge = 5
+panel_overlap = 0
+radius = 10
+start = [ "clock", "spacer_left", "cpu", "ram" ]
+widget_spacing = 8
+
+[battery]
+warning_threshold = 20
+
+[calendar]
+enabled = true
+
+    [calendar.account.pipo]
+    color = "primary"
+    name = "Google"
+    type = "google"
+
+[control_center.calendar]
+show_week_numbers = true
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "clipboard"
+
+[[control_center.shortcuts]]
+type = "dark_mode"
+
+[[control_center.shortcuts]]
+type = "audio"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 1800.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[keybinds]
+cancel = [ "Escape" ]
+down = [ "Down" ]
+left = [ "Left" ]
+right = [ "Right" ]
+up = [ "Up" ]
+validate = [ "Return" ]
+
+[location]
+auto_locate = true
+
+[lockscreen]
+fingerprint = false
+monitors = [ "eDP-1" ]
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@Unknown-1",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@DVI-I-2",
+    "lockscreen-login-box@DVI-I-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DVI-I-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 1280.0
+    cy = 1321.0
+    output = "DVI-I-1"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DVI-I-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DVI-I-2"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 1280.0
+    cy = 1321.0
+    output = "DVI-I-2"
+    placement_height = 1440.0
+    placement_width = 2560.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DVI-I-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1920.0
+    cy = 1978.0
+    output = "HDMI-A-1"
+    placement_height = 2160.0
+    placement_width = 3840.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@Unknown-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 512.0
+    cy = 586.0
+    output = "Unknown-1"
+    placement_height = 768.0
+    placement_width = 1024.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@Unknown-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 960.0
+    cy = 961.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 160.0
+    box_width = 288.0
+    cx = 960.0
+    cy = 524.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+[plugins]
+enabled = [ "noctalia/bongocat" ]
+
+[shell]
+clipboard_history_max_entries = 200
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+telemetry_enabled = true
+
+    [shell.animation]
+    speed = 0.5000000074505806
+
+    [shell.launcher]
+    categories = false
+
+        [shell.launcher.providers.calculator]
+        prefix = "="
+
+        [shell.launcher.providers.emoji]
+        global = false
+        prefix = ": "
+
+        [shell.launcher.providers.wallpaper]
+        global = true
+
+    [shell.panel]
+    launcher_categories = false
+    launcher_session_search = true
+    session_placement = "floating"
+
+    [shell.screenshot]
+    directory = "/home/pipo/Pictures/screenshots"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+[theme]
+community_palette = "Oxocarbon"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "vibrant"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "gtk3", "gtk4", "ghostty", "hyprland" ]
+    community_ids = [
+        "claude-code",
+        "spotifast",
+        "zen-browser",
+        "discord",
+        "libreoffice",
+        "micro",
+        "obsidian",
+        "zed",
+        "fastfetch",
+        "superfile"
+    ]
+
+[wallpaper]
+directory = "/home/pipo/Pictures/wallpapers"
+transition_duration = 1000
+transition_on_startup = true
+
+    [wallpaper.automation]
+    recursive = false
+
+    [wallpaper.default]
+    path = "/home/pipo/Pictures/wallpapers/explorer_green_day.jpg"
+
+    [wallpaper.last]
+    path = "/home/pipo/Pictures/wallpapers/explorer_green_day.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/pipo/Pictures/wallpapers/explorer_green_day.jpg"
+
+[widget.clock]
+format = "{:%d.%m.%Y - %H:%M}"
+
+[widget.media]
+hide_when_no_media = true
+title_scroll = "on_hover"
+
+[widget.spacer_left]
+type = "spacer"
