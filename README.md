@@ -21,18 +21,3 @@ Init Stow:
 ```bash
 stow -t ~ .
 ```
-
-## Packages to know
-
-- alacritty
-- fd
-- fzf
-- git
-- htop
-- kitty
-- ripgrep
-- tmux
-- zed
-- gparted
-- gthumb
--
