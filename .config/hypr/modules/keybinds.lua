@@ -83,6 +83,7 @@ hl.bind(env.mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(env.apps.ipc .. " panel-t
 
 -- Power Menu
 hl.bind(env.mainMod .. " + P", hl.dsp.exec_cmd(env.apps.ipc .. " panel-toggle session"))
+hl.bind("XF86PowerOff", hl.dsp.exec_cmd(env.apps.ipc .. " panel-toggle session"))
 
 -- Scrolling Layout
 -- hl.bind(env.mainMod .. " + SHIFT + up", hl.dsp.layout("promote"))

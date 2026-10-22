@@ -83,5 +83,6 @@ hl.device({
     sensitivity = -0.5,
 })
 
+
 -- For Noctalia Color templates
 require("noctalia").apply_theme()

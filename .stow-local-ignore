@@ -19,7 +19,7 @@ _darcs
 \#.*\#       # emacs autosave files
 
 ^/README.*
-^/pacman_explicit_packages.*
+^/pkglist.*
 ^/LICENSE.*
 ^/COPYING
 \.save

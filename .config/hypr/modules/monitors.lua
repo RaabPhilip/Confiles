@@ -7,9 +7,9 @@ local env = require("modules.variables")
 -- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
     output = env.outputs.laptop,
-    mode = "1920x1080@60",
+    mode = "2880x1920@120.00",
     position = "0x800",
-    scale = "1",
+    scale = "1.6",
 })
 
 hl.monitor({

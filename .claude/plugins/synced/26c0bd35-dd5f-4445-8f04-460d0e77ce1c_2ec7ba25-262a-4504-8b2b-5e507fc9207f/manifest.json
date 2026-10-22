@@ -1,0 +1,14 @@
+{
+  "lastUpdated": 1792574152886,
+  "plugins": [
+    {
+      "pluginId": "plugin_019oxSRR9fX9qMFkGdhg65pu",
+      "name": "74e0a4de-42c9-4bd3-b465-6452a22ad977",
+      "description": "A single study-companion agent for ADHD learners, any subject: automatic spaced-repetition warm-ups, small-chunk teaching, Feynman-style reflection, and periodic self-analysis — grounded in cited learning-science and ADHD research (see RESEARCH.md).",
+      "version": "0001",
+      "updatedAt": "2026-09-29T19:04:08.187004Z",
+      "marketplaceName": "anthropic-plugin-directory",
+      "installationPreference": "available"
+    }
+  ]
+}

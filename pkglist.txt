@@ -1,5 +1,4 @@
 alacritty
-amd-ucode
 aspnet-runtime
 aspnet-targeting-pack
 base
@@ -53,10 +52,6 @@ gthumb
 hyphen-de
 hyprland
 hyprpicker
-impala
-iwd
-java-openjfx-bin
-jdk11-openjdk
 jdk-openjdk
 jetbrains-toolbox
 jq
@@ -74,7 +69,6 @@ nano
 networkmanager
 network-manager-applet
 nginx
-noctalia-git
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -103,9 +97,7 @@ snapper
 sof-firmware
 spotifast-bin
 sshfs
-starship
 steam
-stirling-pdf-desktop-bin
 stow
 sudo
 superfile
@@ -117,8 +109,6 @@ ttf-dejavu
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-liberation
-tuned
-tuned-ppd
 udiskie
 ufw
 unzip
@@ -130,14 +120,12 @@ vim
 virt-manager
 virt-viewer
 vlc
-vulkan-radeon
 wget
 whatsdesk-bin
 winboat-bin
 wireplumber
 xdg-desktop-portal-hyprland
 xdg-utils
-xf86-video-amdgpu
 xf86-video-ati
 xorg-xhost
 zed
